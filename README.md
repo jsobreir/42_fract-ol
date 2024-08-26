@@ -1,7 +1,7 @@
 # fract-ol
 This was my first ever graphics project in my C learning journey at 42 Porto. The goal is to render beautiful fractals.
 
-## Features
+## Features and Controls
 - Zoom to mouse pointer: mouse and scroll
 - Increment/decrement value of Julia set constant: keys j/k
 - Alternate the fractal colors with left mouse button

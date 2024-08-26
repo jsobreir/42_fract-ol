@@ -3,7 +3,7 @@ This was my first ever graphics project in my C learning journey at 42 Porto. Th
 
 ## Features
 - Zoom to mouse pointer: mouse and scroll
-- Increase/decrease value of Julia set constant: keys j/k
+- Increment/decrement value of Julia set constant: keys j/k
 - Alternate the fractal colors with left mouse button
 - Switch to Mandelbrot set: key 1
 - Switch to Julia set: key 2

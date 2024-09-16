@@ -14,9 +14,7 @@
 
 void	color_picker(t_fractal *fractal)
 {
-	char	*set;
 
-	set = fractal->color_set;
 	if (ft_strncmp(fractal->color_set, "greyscale", 9) == 0)
 	{
 		fractal->color_set = "rainbow";

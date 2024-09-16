@@ -38,9 +38,7 @@ void	put_pixel(int pix, int piy, t_fractal *fractal, int iterations)
 void	handle_pixel(t_fractal *fractal, int pix, int piy)
 {
 	int			color;
-	t_complex	*z;
 
-	z = &fractal->z;
 	if (ft_strncmp(fractal->name, "mandelbrot", 10) == 0)
 		color = mandelbrot(fractal, pix, piy);
 	else if (ft_strncmp(fractal->name, "julia", 5) == 0)

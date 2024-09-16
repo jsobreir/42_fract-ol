@@ -38,9 +38,7 @@ int	mandelbrot(t_fractal *fractal, int pix, int piy)
 {
 	int			color;
 	t_complex	c;
-	double		scale;
 
-	scale = fractal->scale;
 	fractal->z.re = mapx(pix, fractal->x_min, fractal->x_max, fractal->disp_x);
 	fractal->z.im = mapy(piy, fractal->y_min, fractal->y_max, fractal->disp_y);
 	c.re = fractal->z.re;
@@ -58,13 +56,11 @@ int	mandelbrot(t_fractal *fractal, int pix, int piy)
 
 int	julia(t_fractal *fractal, int pix, int piy)
 {
-	double		scale;
 	int			color;
 	t_complex	*c;
 	t_complex	z;
 
 	c = &fractal->z;
-	scale = fractal->scale;
 	z.re = mapx(pix, fractal->x_min, fractal->x_max, fractal->disp_x);
 	z.im = mapy(piy, fractal->y_min, fractal->y_max, fractal->disp_y);
 	z.mod_squared = z.re * z.re + z.im * z.im;
@@ -76,3 +72,4 @@ int	julia(t_fractal *fractal, int pix, int piy)
 	}
 	return (color);
 }
+
